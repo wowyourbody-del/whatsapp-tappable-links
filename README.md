@@ -19,8 +19,8 @@ RTL
 בלי preview, וואטסאפ מסמן את הלינק אבל אזור הלחיצה נשבר ב-
 RTL
 (באג ידוע).
-ברגע שמפעילים preview, ההודעה נשלחת כ-
-`extendedTextMessage`
+ברגע שמפעילים preview, נוספים להודעה שדות ה-preview
+(`matchedText`, `title`)
 והלינקים נהיים לחיצים אמין.
 
 > אל תבזבזו זמן על סימני כיוון
@@ -121,7 +121,7 @@ try {
 
 ```bash
 ls node_modules/link-preview-js/index.js   # אמור להתקיים אחרי ה-shim
-grep -c "url generation failed" bot.log     # אמור להיות 0
+grep -c "url generation failed" bot.log     # אמור להיות 0 (היכן שהבוט כותב לוג)
 ```
 
 ---
